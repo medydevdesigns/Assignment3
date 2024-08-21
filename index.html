@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
-    <!--Tailwind CSS CDN-->
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--daisyui-->
+
+    <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.0/dist/full.css" rel="stylesheet" type="text/css" />
+
     <style>
-        /*  Manrope font */
+        /* Manrope font */
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
         body {
@@ -20,43 +23,62 @@
 </head>
 
 <body class="bg-gray-100">
-<!--Navbar Section Brand logo and link to navigate-->
-<nav class="bg-white shadow-md">
-<div class="container mx-auto px-4 py-3 flex justify-between items-center"></div>
-<!--Logo -->
-<a href="#" class="text-xl font-bold text-gray-800">Rinterio</a>
-<!--Hamburger Menu Icon when its mobile device-->
-<div class="lg:hidden">
-    <button id="menu-toggle" class="text-gray-800 focus:outline-none ">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-    </button>
-</div>
 
-<!--Navigation Links Large Device-->
-<div id="menu" class="hidden lg:flex space-x-6">
-    <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
-    <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
-    <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
-    <a href="#" class="text-gray-600 hover:text-gray-800">Blogs</a>
-    <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
-    <a href="#" class="btn btn-primary">Book Consult</a>
-</div>
-</div>
+    <!-- Navbar Section -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold text-gray-800">Rinterio</a>
 
-<!-- Mobile device option) -->
-<div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
-<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Home</a>
-<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Services</a>
-<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Portfolio</a>
-<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Blogs</a>
-<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Contact Us</a>
-</div>
-</nav>
+            <!-- Hamburger Menu Icon for Mobile Devices -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
 
+            <!-- Navigation Links for Large Devices -->
+            <div id="menu" class="hidden lg:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Blogs</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+                <a href="#" class="btn btn-primary">Book Consult</a>
+            </div>
+        </div>
 
-</nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
+            <a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Home</a>
+            <a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Services</a>
+            <a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Portfolio</a>
+            <a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Blogs</a>
+            <a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-center bg-contain bg-no-repeat h-64" style="background-image: url('/assets/banner.png');"></div>
+
+        <div class="flex items-center justify-center h-full bg-gray-100 bg-opacity-50">
+        <div class="text-center text-white">
+                <h1 class="text-4xl lg:text-6xl font-bold text-black">
+                    A barn house of this design has a striking appearance
+                </h1>
+                <p class="mt-4 text-lg lg:text-xl text-black">
+                    The barn house captivates with its blend of rustic charm and modern sophistication,
+                    featuring weathered wood, sleek metal accents, and large windows.
+                </p>
+                <a href="#" class="btn btn-primary mt-6">View Details</a>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
