@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>Rinterio</title>
-</head>
-<body class="font-manrope bg-gray-100">
-    <!--Navbar Section-->
-    <nav class="bg-whiteshadow-md">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-gray-800">Rinterio</a>
-            <div class="hidden lg:flex space-x-6">
-                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Blogs</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
-            </div>
-            <a href="#" class="btn btn-primary lg:hidden">Book Consult</a>
-        </div>
+    <!--Tailwind CSS CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--daisyui-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <style>
+        /*  Manrope font */
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
-    </nav>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+<!--Navbar Section Brand logo and link to navigate-->
+<nav class="bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center"></div>
+<!--Logo -->
+<a href="#" class="text-xl font-bold text-gray-800">Rinterio</a>
+<!--Hamburger Menu Icon when its mobile device-->
+<div class="lg:hidden">
+    <button id="menu-toggle" class="text-gray-800 focus:outline-none ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+</div>
+
+<!--Navigation Links Large Device-->
+<div id="menu" class="hidden lg:flex space-x-6">
+    <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+    <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
+    <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
+    <a href="#" class="text-gray-600 hover:text-gray-800">Blogs</a>
+    <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+    <a href="#" class="btn btn-primary">Book Consult</a>
+</div>
+</div>
+
+<!-- Mobile device option) -->
+<div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
+<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Home</a>
+<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Services</a>
+<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Portfolio</a>
+<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Blogs</a>
+<a href="#" class="block text-gray-600 hover:text-gray-800 py-2">Contact Us</a>
+</div>
+</nav>
+
+
+</nav>
 </body>
+
 </html>
