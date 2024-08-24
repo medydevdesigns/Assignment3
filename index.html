@@ -23,13 +23,13 @@
     </style>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 max-w-[1170px] w-full mx-auto">
 
     <!-- Navbar Section -->
     <nav class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="text-xl font-bold text-gray-800"><i class="fa-solid fa-arrow-right transform rotate-[-20deg]"></i> Rinterio</a>
+            <!-- Text Logo -->
+            <a href="#" class="text-xl font-bold text-gray-800 flex "><i class="fa-solid fa-arrow-right transform rotate-[-20deg] flex w-8 h-8 bg-green-200 rounded-full flex items-center justify-center "></i> Rinterio</a>
 
             <!-- Hamburger Menu Icon for Mobile Devices -->
             <div class="lg:hidden">
@@ -57,7 +57,7 @@
                 </a>
             </div>
            <!-- Book Consultant Button -->
-           <a href="#" class="px-4 py-2 bg-green-200 text-black rounded-full flex items-center space-x-2">
+           <a href="#" class="px-4 py-2 bg-green-400 text-black rounded-full flex items-center space-x-2">
             <span>Book Consultant</span>
             <i class="fa-solid fa-arrow-right transform rotate-[-20deg]"></i>
         </a>
@@ -86,7 +86,7 @@
   <!-- Content section -->
   <div class="flex items-center justify-center py-8">
       <div class="text-center text-black max-w-[1170px] w-full mx-auto">
-          <h1 class="text-4xl lg:text-6xl font-extrabold mb-4">
+          <h1 class="text-4xl lg:text-6xl font-black mb-4">
               A barn house of this design has a striking appearance
           </h1>
           <p class="text-lg lg:text-xl font-medium mb-6">
@@ -101,11 +101,17 @@
 
 
     <!--About Us Section-->
+    <div class="max-w-6xl mx-auto p-4 border border-gray-300 rounded-lg">
+
+      <!--Image arrow spin-->
+      <div class="flex flex-col items-start mb-8">
+        <img src="assets/Vector.png" alt="">
+      </div>
     <div class="flex flex-col md:flex-row items-center justify-between mx-auto p-8">
         <!-- Left Div -->
         <div class="md:w-1/2 space-y-6">
-          <!-- Heading -->
-          <h3 class="text-2xl font-bold text-gray-800">About Us</h3>
+          <!-- About Us button-->
+          <button class="px-4 py-2 bg-slate-200 text-black font-extrabold rounded mb-4">About Us</button>
           <h1 class="text-2xl font-bold text-gray-800">We design thoughtful, liveable spaces</h1>
           <!-- Paragraph -->
           <p class="text-gray-900">The barn house captivates with its blend of rustic charm and 
@@ -132,13 +138,14 @@
           <img src="assets/Rectangle.png" alt="About Us Image" class="w-full h-auto rounded-lg shadow-lg">
         </div>
       </div>
+    </div>
     <!-- This section provides information about the company. -->
     <div class="bg-white mx-auto my-8 p-4" style="width: 1180px; height: 240px;">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 h-full">
           <!-- Card 1 -->
           <div class="card bg-base-100 shadow-md p-4 flex items-center">
             <div class="mr-4">
-              <i class="fa-regular fa-message"></i>
+              <i class="fa-regular fa-message text-4xl"></i>
             </div>
             <div>
               <h4 class="text-3xl font-bold text-gray-700">235+</h4>
@@ -149,7 +156,7 @@
           <!-- Card 2 -->
           <div class="card bg-base-100 shadow-md p-4 flex items-center">
             <div class="mr-4">
-              <i class="fa-solid fa-house"></i>
+              <i class="fa-solid fa-house text-4xl"></i>
             </div>
             <div>
               <h4 class="text-3xl font-bold text-gray-700">50+</h4>
@@ -160,7 +167,7 @@
           <!-- Card 3 -->
           <div class="card bg-base-100 shadow-md p-4 flex items-center">
             <div class="mr-4">
-              <i class="fa-solid fa-person"></i>
+              <i class="fa-solid fa-person text-4xl"></i>
             </div>
             <div>
               <h4 class="text-3xl font-bold text-gray-700">30k</h4>
@@ -174,18 +181,20 @@
               <i class="fa-solid fa-person"></i>
             </div>
             <div>
-              <h4 class="text-3xl font-bold text-gray-700">307+</h4>
+              <h4 class="text-3xl font-bold text-gray-700 text-4xl">307+</h4>
               <p class="text-gray-600">Staff Members</p>
             </div>
           </div>
         </div>
       </div>
       
-<!--Portfolio Section-->
+<!--Our Work process-->
 <div class="container mx-auto my-8 p-8">
     <!-- First Div -->
-    <div class="text-center">
+    <div class="text-center flex flex-col items-center justify-center">
+      <button class="btn btn-primary bg-green-200 text-black rounded-full flex items-center justify-center gap-2 px-6 py-3 transform hover:scale-105 transition duration-200">How we Work</button>
       <!-- Heading -->
+       <br>
       <h1 class="text-4xl font-bold text-gray-800 mb-4">Our Works Process</h1>
       
       <!-- Paragraph -->
@@ -194,37 +203,29 @@
       <!-- Cards Container -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         <!-- Card 1 -->
-        <div class="card bg-pink-500 text-white p-4 shadow-md flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mb-4">
-            <path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z"/>
-          </svg>
+        <div class="card bg-pink-300 text-white p-4 shadow-md flex flex-col items-center">
+          <i class="fa-regular fa-lightbulb text-4xl"></i>
           <h4 class="text-xl font-bold">Concept</h4>
           <p class="text-white mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
         </div>
   
         <!-- Card 2 -->
-        <div class="card bg-yellow-500 text-white p-4 shadow-md flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mb-4">
-            <path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z"/>
-          </svg>
+        <div class="card bg-yellow-300 text-white p-4 shadow-md flex flex-col items-center">
+          <i class="fa-solid fa-sitemap text-4xl"></i>
           <h4 class="text-xl font-bold">Design Process</h4>
           <p class="text-white mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
         </div>
   
         <!-- Card 3 -->
-        <div class="card bg-green-500 text-white p-4 shadow-md flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mb-4">
-            <path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z"/>
-          </svg>
+        <div class="card bg-green-300 text-white p-4 shadow-md flex flex-col items-center">
+          <i class="fa-regular fa-eye text-4xl"></i>
           <h4 class="text-xl font-bold">Supervision</h4>
           <p class="text-white mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
         </div>
   
         <!-- Card 4 -->
-        <div class="card bg-blue-500 text-white p-4 shadow-md flex flex-col items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mb-4">
-            <path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z"/>
-          </svg>
+        <div class="card bg-blue-300 text-white p-4 shadow-md flex flex-col items-center">
+          <i class="fa-solid fa-folder-open text-4xl"></i>
           <h4 class="text-xl font-bold">Budget Planning</h4>
           <p class="text-white mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
         </div>
@@ -246,48 +247,66 @@
           </p>
         </div>
     
-        <div class="w-full md:w-1/3">
-          <div class="card bg-base-100 shadow-md flex flex-col md:flex-row">
-            <img src="assets/img1.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-l-lg" />
-            <div class="p-4 flex flex-col justify-center">
+        <!-- Grid card sections  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- First Row -->
+          <div class="flex flex-col md:flex-row items-center bg-base-100 shadow-md p-4">
+            <img src="assets/img1.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-lg mb-4 md:mb-0 md:mr-4" />
+            <div class="text-center md:text-left">
               <h4 class="text-lg font-bold text-gray-800">Commercial</h4>
-              <p class="text-gray-600">The Barn house captivates with its blend of rustic charm and modern</p>
+              <p class="text-gray-600">The Barn house captivates with its blend of rustic charm and modern appeal.</p>
             </div>
           </div>
+    
+          <div class="flex flex-col md:flex-row items-center bg-base-100 shadow-md p-4">
+            <div class="text-center md:text-left md:mr-4">
+              <h4 class="text-lg font-bold text-gray-800">Residential</h4>
+              <p class="text-gray-600">Experience the tranquility of a home designed for peace and comfort.</p>
+            </div>
+            <img src="assets/img2.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-lg" />
+          </div>
+    
+          <!-- Second Row -->
+          <div class="flex flex-col md:flex-row items-center bg-base-100 shadow-md p-4">
+            <img src="assets/img3.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-lg mb-4 md:mb-0 md:mr-4" />
+            <div class="text-center md:text-left">
+              <h4 class="text-lg font-bold text-gray-800">Office Spaces</h4>
+              <p class="text-gray-600">Modern offices designed to enhance productivity and creativity.</p>
+            </div>
+          </div>
+    
+          <div class="flex flex-col md:flex-row items-center bg-base-100 shadow-md p-4">
+            <div class="text-center md:text-left md:mr-4">
+              <h4 class="text-lg font-bold text-gray-800">Retail</h4>
+              <p class="text-gray-600">Innovative retail spaces that attract customers and drive sales.</p>
+            </div>
+            <img src="assets/img4.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-lg" />
+          </div>
+    
+          <!-- Third Row -->
+          <div class="flex flex-col md:flex-row items-center bg-base-100 shadow-md p-4">
+            <img src="assets/img5.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-lg mb-4 md:mb-0 md:mr-4" />
+            <div class="text-center md:text-left">
+              <h4 class="text-lg font-bold text-gray-800">Hospitality</h4>
+              <p class="text-gray-600">Spaces designed to provide a luxurious and welcoming experience.</p>
+            </div>
+          </div>
+    
+          <div class="flex flex-col md:flex-row items-center bg-base-100 shadow-md p-4">
+            <div class="text-center md:text-left md:mr-4">
+              <h4 class="text-lg font-bold text-gray-800">Industrial</h4>
+              <p class="text-gray-600">Functional and efficient spaces tailored for industrial needs.</p>
+            </div>
+            <img src="assets/img5.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-lg" />
+          </div>
+    
         </div>
+        <!-- 6 Card for responsiveness  -->
     
-          <div class="w-full md:w-1/4">
-            <div class="card bg-base-100 shadow-md flex">
-              <img src="assets/img2.png" alt="Card Image" class="w-full h-auto rounded-lg" />
-            </div>
-          </div>
-        </div>
-    
-        <div class="flex flex-wrap gap-4">
-          <div class="w-full md:w-1/3">
-            <div class="card bg-base-100 shadow-md">
-              <img src="assets/img3.png" alt="Card Image" class="w-full h-auto rounded-lg" />
-            </div>
-          </div>
-    
-          <div class="w-full md:w-1/3">
-            <div class="card bg-base-100 shadow-md flex flex-col md:flex-row">
-              <img src="assets/img4.png" alt="Card Image" class="w-full md:w-1/2 h-auto rounded-l-lg" />
-              <div class="p-4 flex flex-col justify-center">
-                <h4 class="text-lg font-bold text-gray-800">Commercial</h4>
-                <p class="text-gray-600">The Barn house captivates with its blend of rustic charm and modern</p>
-              </div>
-            </div>
-          </div>
-    
-          <div class="w-full md:w-1/3">
-            <div class="card bg-base-100 shadow-md">
-              <img src="assets/img5.png" alt="Card Image" class="w-full h-auto rounded-lg" />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+    
   
 <!--Read Our Articles-->
 <div class="bg-gray-100 py-12">
@@ -305,7 +324,7 @@
   <div class="flex justify-center gap-6">
     <!-- Card 1 -->
     <div class="card bg-white shadow-lg rounded-lg p-4">
-      <img src="https://via.placeholder.com/400x300" alt="Article Image" class="rounded-lg mb-4">
+      <img src="assets/article1.png" alt="Article Image" class="rounded-lg mb-4">
       <div class="flex items-center text-sm text-gray-500 mb-2">
         <span>July 14, 2024</span>
         <span class="mx-2">|</span>
@@ -318,7 +337,7 @@
 
     <!-- Card 2 -->
     <div class="card bg-white shadow-lg rounded-lg p-4">
-      <img src="https://via.placeholder.com/400x300" alt="Article Image" class="rounded-lg mb-4">
+      <img src="assets/article2.png" alt="Article Image" class="rounded-lg mb-4">
       <div class="flex items-center text-sm text-gray-500 mb-2">
         <span>July 14, 2024</span>
         <span class="mx-2">|</span>
@@ -331,7 +350,7 @@
 
     <!-- Card 3 -->
     <div class="card bg-white shadow-lg rounded-lg p-4">
-      <img src="https://via.placeholder.com/400x300" alt="Article Image" class="rounded-lg mb-4">
+      <img src="assets/article3.png" alt="Article Image" class="rounded-lg mb-4">
       <div class="flex items-center text-sm text-gray-500 mb-2">
         <span>July 14, 2024</span>
         <span class="mx-2">|</span>
@@ -374,10 +393,40 @@
 <!--Contact Section-->
 
 </body>
-<!--Footer-->
-<footer class="bg-gray-800 text-white py-4">
-  <div class="container mx-auto text-center">
-      <p class="text-sm">© 2023 Rinterio. All rights reserved.</p>
+
+<!-- Footer Section -->
+<footer class="bg-neutral-900 text-center text-white py-8">
+  <div class="container mx-auto">
+      <!-- Logo and Title -->
+      <div class="flex flex-col items-center">
+      <!--logo-->
+          <a href="#" class="text-xl font-bold text-gray-800 flex "><i class="fa-solid fa-arrow-right transform rotate-[-20deg] flex w-8 h-8 bg-green-200 rounded-full flex items-center justify-center "></i></a>
+          <h2 class="text-2xl font-bold">Rinterio</h2>
+      </div>
+
+      <!-- Description -->
+      <p class="text-gray-400 max-w-md mx-auto mt-2 mb-4">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+
+      <!-- Navigation Links -->
+      <nav class="flex justify-center space-x-8 mb-6">
+          <a href="#" class="text-gray-400 hover:text-white">Home</a>
+          <a href="#" class="text-gray-400 hover:text-white">Services</a>
+          <a href="#" class="text-gray-400 hover:text-white">Portfolio</a>
+          <a href="#" class="text-gray-400 hover:text-white">Blogs</a>
+          <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
+      </nav>
+
+      <!-- Button -->
+      <div class="flex justify-center">
+          <button class="btn btn-primary bg-green-400 text-black rounded-full flex items-center justify-center gap-2 px-6 py-3 transform hover:scale-105 transition duration-200">
+              Book Consult
+              <!-- Replace icon -->
+              <i class="fa-solid fa-arrow-right"></i>
+          </button>
+      </div>
   </div>
 </footer>
+
 </html>
